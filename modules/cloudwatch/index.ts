@@ -1,8 +1,8 @@
 import * as cdk from "@aws-cdk/core";
 import * as synthetics from "@aws-cdk/aws-synthetics";
 import * as cloudwatch from "@aws-cdk/aws-cloudwatch";
-import { cwSyntheticCanaries as cwSynths } from "../../parameters/cw-index";
-import { cloudWatchAlarms as cwAlarms } from "../../parameters/cw-index";
+import { cwSyntheticCanaries as cwSynths } from "./parameters";
+import { cloudWatchAlarms as cwAlarms } from "./parameters";
 
 export class CloudWatchSyntheticsCanaryStack extends cdk.NestedStack {
   constructor(scope: cdk.Construct, id: string, props?: cdk.NestedStackProps) {

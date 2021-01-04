@@ -1,0 +1,962 @@
+{
+  "version": "tree-0.1",
+  "tree": {
+    "id": "App",
+    "path": "",
+    "children": {
+      "Tree": {
+        "id": "Tree",
+        "path": "Tree"
+      },
+      "CdkStack": {
+        "id": "CdkStack",
+        "path": "CdkStack",
+        "children": {
+          "IAMPolicyStack": {
+            "id": "IAMPolicyStack",
+            "path": "CdkStack/IAMPolicyStack",
+            "children": {
+              "AllowSSMIAMManagedPolicy": {
+                "id": "AllowSSMIAMManagedPolicy",
+                "path": "CdkStack/IAMPolicyStack/AllowSSMIAMManagedPolicy",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::IAM::ManagedPolicy",
+                  "aws:cdk:cloudformation:props": {
+                    "policyDocument": {
+                      "Version": "2012-10-17",
+                      "Statement": [
+                        {
+                          "Sid": "VisualEditor0",
+                          "Effect": "Allow",
+                          "Action": [
+                            "ssm:DescribeParameters",
+                            "ssm:GetParameters",
+                            "ssm:GetParameter"
+                          ],
+                          "Resource": "*"
+                        }
+                      ]
+                    },
+                    "managedPolicyName": "AllowSSM",
+                    "path": "/"
+                  }
+                }
+              },
+              "CloudWatchSyntheticsPolicy": {
+                "id": "CloudWatchSyntheticsPolicy",
+                "path": "CdkStack/IAMPolicyStack/CloudWatchSyntheticsPolicy",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::IAM::ManagedPolicy",
+                  "aws:cdk:cloudformation:props": {
+                    "policyDocument": {
+                      "Version": "2012-10-17",
+                      "Statement": [
+                        {
+                          "Effect": "Allow",
+                          "Action": "cloudwatch:PutMetricData",
+                          "Resource": "*",
+                          "Condition": {
+                            "StringEquals": {
+                              "cloudwatch:namespace": "CloudWatchSynthetics"
+                            }
+                          }
+                        },
+                        {
+                          "Effect": "Allow",
+                          "Action": [
+                            "s3:PutObject",
+                            "logs:CreateLogStream",
+                            "logs:CreateLogGroup",
+                            "logs:PutLogEvents",
+                            "s3:GetBucketLocation"
+                          ],
+                          "Resource": [
+                            "arn:aws:logs:us-east-1:699678132176:log-group:/aws/lambda/cwsyn-*",
+                            "arn:aws:s3:::cw-syn-results-699678132176-us-east-1/canary/*"
+                          ]
+                        },
+                        {
+                          "Effect": "Allow",
+                          "Action": [
+                            "ec2:CreateNetworkInterface",
+                            "s3:ListAllMyBuckets",
+                            "ec2:DescribeNetworkInterfaces",
+                            "ec2:DeleteNetworkInterface",
+                            "xray:*"
+                          ],
+                          "Resource": "*"
+                        }
+                      ]
+                    },
+                    "managedPolicyName": "CloudWatchSyntheticsPolicy",
+                    "path": "/"
+                  }
+                }
+              },
+              "CDKMetadata": {
+                "id": "CDKMetadata",
+                "path": "CdkStack/IAMPolicyStack/CDKMetadata",
+                "children": {
+                  "Default": {
+                    "id": "Default",
+                    "path": "CdkStack/IAMPolicyStack/CDKMetadata/Default"
+                  },
+                  "Condition": {
+                    "id": "Condition",
+                    "path": "CdkStack/IAMPolicyStack/CDKMetadata/Condition"
+                  }
+                }
+              }
+            }
+          },
+          "IAMPolicyStack.NestedStack": {
+            "id": "IAMPolicyStack.NestedStack",
+            "path": "CdkStack/IAMPolicyStack.NestedStack",
+            "children": {
+              "IAMPolicyStack.NestedStackResource": {
+                "id": "IAMPolicyStack.NestedStackResource",
+                "path": "CdkStack/IAMPolicyStack.NestedStack/IAMPolicyStack.NestedStackResource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::CloudFormation::Stack",
+                  "aws:cdk:cloudformation:props": {
+                    "templateUrl": {
+                      "Fn::Join": [
+                        "",
+                        [
+                          "https://s3.",
+                          {
+                            "Ref": "AWS::Region"
+                          },
+                          ".",
+                          {
+                            "Ref": "AWS::URLSuffix"
+                          },
+                          "/",
+                          {
+                            "Ref": "AssetParametersebbb2808432abd80d9081a723ef732354b0d2989fdd098be9c994d3846848cf4S3BucketE82E4673"
+                          },
+                          "/",
+                          {
+                            "Fn::Select": [
+                              0,
+                              {
+                                "Fn::Split": [
+                                  "||",
+                                  {
+                                    "Ref": "AssetParametersebbb2808432abd80d9081a723ef732354b0d2989fdd098be9c994d3846848cf4S3VersionKey26D6691B"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "Fn::Select": [
+                              1,
+                              {
+                                "Fn::Split": [
+                                  "||",
+                                  {
+                                    "Ref": "AssetParametersebbb2808432abd80d9081a723ef732354b0d2989fdd098be9c994d3846848cf4S3VersionKey26D6691B"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "IAMRoleStack": {
+            "id": "IAMRoleStack",
+            "path": "CdkStack/IAMRoleStack",
+            "children": {
+              "CloudWatchSyntheticsIAMRole": {
+                "id": "CloudWatchSyntheticsIAMRole",
+                "path": "CdkStack/IAMRoleStack/CloudWatchSyntheticsIAMRole",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::IAM::Role",
+                  "aws:cdk:cloudformation:props": {
+                    "assumeRolePolicyDocument": {
+                      "Version": "2012-10-17",
+                      "Statement": [
+                        {
+                          "Effect": "Allow",
+                          "Principal": {
+                            "Service": "lambda.amazonaws.com"
+                          },
+                          "Action": "sts:AssumeRole"
+                        }
+                      ]
+                    },
+                    "description": "Allows Lambda functions to call AWS services on your behalf.",
+                    "managedPolicyArns": [
+                      "arn:aws:iam::699678132176:policy/AllowSSM",
+                      "arn:aws:iam::699678132176:policy/CloudWatchSyntheticsPolicy"
+                    ],
+                    "maxSessionDuration": 3600,
+                    "path": "/",
+                    "roleName": "CloudWatchSyntheticsRole"
+                  }
+                }
+              },
+              "CDKMetadata": {
+                "id": "CDKMetadata",
+                "path": "CdkStack/IAMRoleStack/CDKMetadata",
+                "children": {
+                  "Default": {
+                    "id": "Default",
+                    "path": "CdkStack/IAMRoleStack/CDKMetadata/Default"
+                  },
+                  "Condition": {
+                    "id": "Condition",
+                    "path": "CdkStack/IAMRoleStack/CDKMetadata/Condition"
+                  }
+                }
+              }
+            }
+          },
+          "IAMRoleStack.NestedStack": {
+            "id": "IAMRoleStack.NestedStack",
+            "path": "CdkStack/IAMRoleStack.NestedStack",
+            "children": {
+              "IAMRoleStack.NestedStackResource": {
+                "id": "IAMRoleStack.NestedStackResource",
+                "path": "CdkStack/IAMRoleStack.NestedStack/IAMRoleStack.NestedStackResource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::CloudFormation::Stack",
+                  "aws:cdk:cloudformation:props": {
+                    "templateUrl": {
+                      "Fn::Join": [
+                        "",
+                        [
+                          "https://s3.",
+                          {
+                            "Ref": "AWS::Region"
+                          },
+                          ".",
+                          {
+                            "Ref": "AWS::URLSuffix"
+                          },
+                          "/",
+                          {
+                            "Ref": "AssetParametersf4d32dea3ea0eefb97ba48d3b29c23445dad9505d4c6e0462e773e0264a8b809S3BucketD6CB8391"
+                          },
+                          "/",
+                          {
+                            "Fn::Select": [
+                              0,
+                              {
+                                "Fn::Split": [
+                                  "||",
+                                  {
+                                    "Ref": "AssetParametersf4d32dea3ea0eefb97ba48d3b29c23445dad9505d4c6e0462e773e0264a8b809S3VersionKey7A4D58FA"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "Fn::Select": [
+                              1,
+                              {
+                                "Fn::Split": [
+                                  "||",
+                                  {
+                                    "Ref": "AssetParametersf4d32dea3ea0eefb97ba48d3b29c23445dad9505d4c6e0462e773e0264a8b809S3VersionKey7A4D58FA"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "s3Bucket": {
+            "id": "s3Bucket",
+            "path": "CdkStack/s3Bucket",
+            "children": {
+              "cwSynResultsS3Bucket": {
+                "id": "cwSynResultsS3Bucket",
+                "path": "CdkStack/s3Bucket/cwSynResultsS3Bucket",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::S3::Bucket",
+                  "aws:cdk:cloudformation:props": {
+                    "bucketEncryption": {
+                      "serverSideEncryptionConfiguration": [
+                        {
+                          "serverSideEncryptionByDefault": {
+                            "sseAlgorithm": "AES256"
+                          }
+                        }
+                      ]
+                    },
+                    "bucketName": "cw-syn-results-699678132176-us-east-1"
+                  }
+                }
+              },
+              "CDKMetadata": {
+                "id": "CDKMetadata",
+                "path": "CdkStack/s3Bucket/CDKMetadata",
+                "children": {
+                  "Default": {
+                    "id": "Default",
+                    "path": "CdkStack/s3Bucket/CDKMetadata/Default"
+                  },
+                  "Condition": {
+                    "id": "Condition",
+                    "path": "CdkStack/s3Bucket/CDKMetadata/Condition"
+                  }
+                }
+              }
+            }
+          },
+          "s3Bucket.NestedStack": {
+            "id": "s3Bucket.NestedStack",
+            "path": "CdkStack/s3Bucket.NestedStack",
+            "children": {
+              "s3Bucket.NestedStackResource": {
+                "id": "s3Bucket.NestedStackResource",
+                "path": "CdkStack/s3Bucket.NestedStack/s3Bucket.NestedStackResource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::CloudFormation::Stack",
+                  "aws:cdk:cloudformation:props": {
+                    "templateUrl": {
+                      "Fn::Join": [
+                        "",
+                        [
+                          "https://s3.",
+                          {
+                            "Ref": "AWS::Region"
+                          },
+                          ".",
+                          {
+                            "Ref": "AWS::URLSuffix"
+                          },
+                          "/",
+                          {
+                            "Ref": "AssetParameters18dd57aa215ca03ef80005d37e5d1b667eb8fd0cb55e1285b1b89a95617ff1a7S3BucketF57533F5"
+                          },
+                          "/",
+                          {
+                            "Fn::Select": [
+                              0,
+                              {
+                                "Fn::Split": [
+                                  "||",
+                                  {
+                                    "Ref": "AssetParameters18dd57aa215ca03ef80005d37e5d1b667eb8fd0cb55e1285b1b89a95617ff1a7S3VersionKey6FBA2055"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "Fn::Select": [
+                              1,
+                              {
+                                "Fn::Split": [
+                                  "||",
+                                  {
+                                    "Ref": "AssetParameters18dd57aa215ca03ef80005d37e5d1b667eb8fd0cb55e1285b1b89a95617ff1a7S3VersionKey6FBA2055"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "s3BucketPolicies": {
+            "id": "s3BucketPolicies",
+            "path": "CdkStack/s3BucketPolicies",
+            "children": {
+              "cwSynResultsS3BucketPolicy": {
+                "id": "cwSynResultsS3BucketPolicy",
+                "path": "CdkStack/s3BucketPolicies/cwSynResultsS3BucketPolicy",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::S3::BucketPolicy",
+                  "aws:cdk:cloudformation:props": {
+                    "bucket": "cw-syn-results-699678132176-us-east-1",
+                    "policyDocument": {
+                      "Version": "2012-10-17",
+                      "Statement": [
+                        {
+                          "Effect": "Allow",
+                          "Principal": {
+                            "AWS": "arn:aws:iam::699678132176:role/CloudWatchSyntheticsRole"
+                          },
+                          "Action": "s3:*",
+                          "Resource": "arn:aws:s3:::cw-syn-results-699678132176-us-east-1/*"
+                        }
+                      ]
+                    }
+                  }
+                }
+              },
+              "CDKMetadata": {
+                "id": "CDKMetadata",
+                "path": "CdkStack/s3BucketPolicies/CDKMetadata",
+                "children": {
+                  "Default": {
+                    "id": "Default",
+                    "path": "CdkStack/s3BucketPolicies/CDKMetadata/Default"
+                  },
+                  "Condition": {
+                    "id": "Condition",
+                    "path": "CdkStack/s3BucketPolicies/CDKMetadata/Condition"
+                  }
+                }
+              }
+            }
+          },
+          "s3BucketPolicies.NestedStack": {
+            "id": "s3BucketPolicies.NestedStack",
+            "path": "CdkStack/s3BucketPolicies.NestedStack",
+            "children": {
+              "s3BucketPolicies.NestedStackResource": {
+                "id": "s3BucketPolicies.NestedStackResource",
+                "path": "CdkStack/s3BucketPolicies.NestedStack/s3BucketPolicies.NestedStackResource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::CloudFormation::Stack",
+                  "aws:cdk:cloudformation:props": {
+                    "templateUrl": {
+                      "Fn::Join": [
+                        "",
+                        [
+                          "https://s3.",
+                          {
+                            "Ref": "AWS::Region"
+                          },
+                          ".",
+                          {
+                            "Ref": "AWS::URLSuffix"
+                          },
+                          "/",
+                          {
+                            "Ref": "AssetParametersbd2e6cc197bd68fac963f37d274a823af2c71af1ae2ea1ec9b484312d0f40b93S3Bucket483F0E58"
+                          },
+                          "/",
+                          {
+                            "Fn::Select": [
+                              0,
+                              {
+                                "Fn::Split": [
+                                  "||",
+                                  {
+                                    "Ref": "AssetParametersbd2e6cc197bd68fac963f37d274a823af2c71af1ae2ea1ec9b484312d0f40b93S3VersionKeyFFEAC313"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "Fn::Select": [
+                              1,
+                              {
+                                "Fn::Split": [
+                                  "||",
+                                  {
+                                    "Ref": "AssetParametersbd2e6cc197bd68fac963f37d274a823af2c71af1ae2ea1ec9b484312d0f40b93S3VersionKeyFFEAC313"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "CloudWatchSyntheticsCanaryStack": {
+            "id": "CloudWatchSyntheticsCanaryStack",
+            "path": "CdkStack/CloudWatchSyntheticsCanaryStack",
+            "children": {
+              "content-service-live-cw-syn": {
+                "id": "content-service-live-cw-syn",
+                "path": "CdkStack/CloudWatchSyntheticsCanaryStack/content-service-live-cw-syn",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::Synthetics::Canary",
+                  "aws:cdk:cloudformation:props": {
+                    "artifactS3Location": "s3://cw-syn-results-699678132176-us-east-1/canary/content-service-live",
+                    "code": {
+                      "handler": "apiCanaryBlueprint.handler",
+                      "s3Bucket": "csbs-mgmt-alfresco-cw-syn-canaries",
+                      "s3Key": "csbs-alfresco-content-service-live.zip"
+                    },
+                    "executionRoleArn": "arn:aws:iam::699678132176:role/CloudWatchSyntheticsRole",
+                    "name": "content-service-live",
+                    "runtimeVersion": "syn-nodejs-2.2",
+                    "schedule": {
+                      "expression": "rate(5 minutes)",
+                      "durationInSeconds": "0"
+                    },
+                    "startCanaryAfterCreation": true,
+                    "failureRetentionPeriod": 31,
+                    "runConfig": {
+                      "timeoutInSeconds": 300,
+                      "memoryInMb": 1000,
+                      "activeTracing": false
+                    },
+                    "successRetentionPeriod": 31,
+                    "vpcConfig": {
+                      "vpcId": "vpc-0845cc5232f7b37ed",
+                      "subnetIds": [
+                        "subnet-062c110ab35d1d77f",
+                        "subnet-04dd2f7d9ed7eefa5"
+                      ],
+                      "securityGroupIds": [
+                        "sg-00646352d2685d1bc"
+                      ]
+                    }
+                  }
+                }
+              },
+              "content-service-ready-cw-syn": {
+                "id": "content-service-ready-cw-syn",
+                "path": "CdkStack/CloudWatchSyntheticsCanaryStack/content-service-ready-cw-syn",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::Synthetics::Canary",
+                  "aws:cdk:cloudformation:props": {
+                    "artifactS3Location": "s3://cw-syn-results-699678132176-us-east-1/canary/content-service-ready",
+                    "code": {
+                      "handler": "apiCanaryBlueprint.handler",
+                      "s3Bucket": "csbs-mgmt-alfresco-cw-syn-canaries",
+                      "s3Key": "csbs-alfresco-content-service-ready.zip"
+                    },
+                    "executionRoleArn": "arn:aws:iam::699678132176:role/CloudWatchSyntheticsRole",
+                    "name": "content-service-ready",
+                    "runtimeVersion": "syn-nodejs-2.2",
+                    "schedule": {
+                      "expression": "rate(5 minutes)",
+                      "durationInSeconds": "0"
+                    },
+                    "startCanaryAfterCreation": true,
+                    "failureRetentionPeriod": 31,
+                    "runConfig": {
+                      "timeoutInSeconds": 300,
+                      "memoryInMb": 1000,
+                      "activeTracing": false
+                    },
+                    "successRetentionPeriod": 31,
+                    "vpcConfig": {
+                      "vpcId": "vpc-0845cc5232f7b37ed",
+                      "subnetIds": [
+                        "subnet-062c110ab35d1d77f",
+                        "subnet-04dd2f7d9ed7eefa5"
+                      ],
+                      "securityGroupIds": [
+                        "sg-00646352d2685d1bc"
+                      ]
+                    }
+                  }
+                }
+              },
+              "content-service-sum-cw-syn": {
+                "id": "content-service-sum-cw-syn",
+                "path": "CdkStack/CloudWatchSyntheticsCanaryStack/content-service-sum-cw-syn",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::Synthetics::Canary",
+                  "aws:cdk:cloudformation:props": {
+                    "artifactS3Location": "s3://cw-syn-results-699678132176-us-east-1/canary/content-service-sum",
+                    "code": {
+                      "handler": "apiCanaryBlueprint.handler",
+                      "s3Bucket": "csbs-mgmt-alfresco-cw-syn-canaries",
+                      "s3Key": "csbs-alfresco-content-service-sum.zip"
+                    },
+                    "executionRoleArn": "arn:aws:iam::699678132176:role/CloudWatchSyntheticsRole",
+                    "name": "content-service-sum",
+                    "runtimeVersion": "syn-nodejs-2.2",
+                    "schedule": {
+                      "expression": "rate(5 minutes)",
+                      "durationInSeconds": "0"
+                    },
+                    "startCanaryAfterCreation": true,
+                    "failureRetentionPeriod": 31,
+                    "runConfig": {
+                      "timeoutInSeconds": 300,
+                      "memoryInMb": 1000,
+                      "activeTracing": false
+                    },
+                    "successRetentionPeriod": 31,
+                    "vpcConfig": {
+                      "vpcId": "vpc-0845cc5232f7b37ed",
+                      "subnetIds": [
+                        "subnet-062c110ab35d1d77f",
+                        "subnet-04dd2f7d9ed7eefa5"
+                      ],
+                      "securityGroupIds": [
+                        "sg-00646352d2685d1bc"
+                      ]
+                    }
+                  }
+                }
+              },
+              "download-service-cw-syn": {
+                "id": "download-service-cw-syn",
+                "path": "CdkStack/CloudWatchSyntheticsCanaryStack/download-service-cw-syn",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::Synthetics::Canary",
+                  "aws:cdk:cloudformation:props": {
+                    "artifactS3Location": "s3://cw-syn-results-699678132176-us-east-1/canary/download-service",
+                    "code": {
+                      "handler": "apiCanaryBlueprint.handler",
+                      "s3Bucket": "csbs-mgmt-alfresco-cw-syn-canaries",
+                      "s3Key": "csbs-alfresco-download-service.zip"
+                    },
+                    "executionRoleArn": "arn:aws:iam::699678132176:role/CloudWatchSyntheticsRole",
+                    "name": "download-service",
+                    "runtimeVersion": "syn-nodejs-2.2",
+                    "schedule": {
+                      "expression": "rate(5 minutes)",
+                      "durationInSeconds": "0"
+                    },
+                    "startCanaryAfterCreation": true,
+                    "failureRetentionPeriod": 31,
+                    "runConfig": {
+                      "timeoutInSeconds": 300,
+                      "memoryInMb": 1000,
+                      "activeTracing": false
+                    },
+                    "successRetentionPeriod": 31,
+                    "vpcConfig": {
+                      "vpcId": "vpc-0845cc5232f7b37ed",
+                      "subnetIds": [
+                        "subnet-062c110ab35d1d77f",
+                        "subnet-04dd2f7d9ed7eefa5"
+                      ],
+                      "securityGroupIds": [
+                        "sg-00646352d2685d1bc"
+                      ]
+                    }
+                  }
+                }
+              },
+              "pdftron-server-cw-syn": {
+                "id": "pdftron-server-cw-syn",
+                "path": "CdkStack/CloudWatchSyntheticsCanaryStack/pdftron-server-cw-syn",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::Synthetics::Canary",
+                  "aws:cdk:cloudformation:props": {
+                    "artifactS3Location": "s3://cw-syn-results-699678132176-us-east-1/canary/pdftron-server",
+                    "code": {
+                      "handler": "apiCanaryBlueprint.handler",
+                      "s3Bucket": "csbs-mgmt-alfresco-cw-syn-canaries",
+                      "s3Key": "csbs-alfresco-pdftron-server.zip"
+                    },
+                    "executionRoleArn": "arn:aws:iam::699678132176:role/CloudWatchSyntheticsRole",
+                    "name": "pdftron-server",
+                    "runtimeVersion": "syn-nodejs-2.2",
+                    "schedule": {
+                      "expression": "rate(5 minutes)",
+                      "durationInSeconds": "0"
+                    },
+                    "startCanaryAfterCreation": true,
+                    "failureRetentionPeriod": 31,
+                    "runConfig": {
+                      "timeoutInSeconds": 300,
+                      "memoryInMb": 1000,
+                      "activeTracing": false
+                    },
+                    "successRetentionPeriod": 31,
+                    "vpcConfig": {
+                      "vpcId": "vpc-0845cc5232f7b37ed",
+                      "subnetIds": [
+                        "subnet-062c110ab35d1d77f",
+                        "subnet-04dd2f7d9ed7eefa5"
+                      ],
+                      "securityGroupIds": [
+                        "sg-00646352d2685d1bc"
+                      ]
+                    }
+                  }
+                }
+              },
+              "share-service-cw-syn": {
+                "id": "share-service-cw-syn",
+                "path": "CdkStack/CloudWatchSyntheticsCanaryStack/share-service-cw-syn",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::Synthetics::Canary",
+                  "aws:cdk:cloudformation:props": {
+                    "artifactS3Location": "s3://cw-syn-results-699678132176-us-east-1/canary/share-service",
+                    "code": {
+                      "handler": "apiCanaryBlueprint.handler",
+                      "s3Bucket": "csbs-mgmt-alfresco-cw-syn-canaries",
+                      "s3Key": "csbs-alfresco-share-service.zip"
+                    },
+                    "executionRoleArn": "arn:aws:iam::699678132176:role/CloudWatchSyntheticsRole",
+                    "name": "share-service",
+                    "runtimeVersion": "syn-nodejs-2.2",
+                    "schedule": {
+                      "expression": "rate(5 minutes)",
+                      "durationInSeconds": "0"
+                    },
+                    "startCanaryAfterCreation": true,
+                    "failureRetentionPeriod": 31,
+                    "runConfig": {
+                      "timeoutInSeconds": 300,
+                      "memoryInMb": 1000,
+                      "activeTracing": false
+                    },
+                    "successRetentionPeriod": 31,
+                    "vpcConfig": {
+                      "vpcId": "vpc-0845cc5232f7b37ed",
+                      "subnetIds": [
+                        "subnet-062c110ab35d1d77f",
+                        "subnet-04dd2f7d9ed7eefa5"
+                      ],
+                      "securityGroupIds": [
+                        "sg-00646352d2685d1bc"
+                      ]
+                    }
+                  }
+                }
+              },
+              "token-service-cw-syn": {
+                "id": "token-service-cw-syn",
+                "path": "CdkStack/CloudWatchSyntheticsCanaryStack/token-service-cw-syn",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::Synthetics::Canary",
+                  "aws:cdk:cloudformation:props": {
+                    "artifactS3Location": "s3://cw-syn-results-699678132176-us-east-1/canary/token-service",
+                    "code": {
+                      "handler": "apiCanaryBlueprint.handler",
+                      "s3Bucket": "csbs-mgmt-alfresco-cw-syn-canaries",
+                      "s3Key": "csbs-alfresco-token-service.zip"
+                    },
+                    "executionRoleArn": "arn:aws:iam::699678132176:role/CloudWatchSyntheticsRole",
+                    "name": "token-service",
+                    "runtimeVersion": "syn-nodejs-2.2",
+                    "schedule": {
+                      "expression": "rate(5 minutes)",
+                      "durationInSeconds": "0"
+                    },
+                    "startCanaryAfterCreation": true,
+                    "failureRetentionPeriod": 31,
+                    "runConfig": {
+                      "timeoutInSeconds": 300,
+                      "memoryInMb": 1000,
+                      "activeTracing": false
+                    },
+                    "successRetentionPeriod": 31,
+                    "vpcConfig": {
+                      "vpcId": "vpc-0845cc5232f7b37ed",
+                      "subnetIds": [
+                        "subnet-062c110ab35d1d77f",
+                        "subnet-04dd2f7d9ed7eefa5"
+                      ],
+                      "securityGroupIds": [
+                        "sg-00646352d2685d1bc"
+                      ]
+                    }
+                  }
+                }
+              },
+              "CDKMetadata": {
+                "id": "CDKMetadata",
+                "path": "CdkStack/CloudWatchSyntheticsCanaryStack/CDKMetadata",
+                "children": {
+                  "Default": {
+                    "id": "Default",
+                    "path": "CdkStack/CloudWatchSyntheticsCanaryStack/CDKMetadata/Default"
+                  },
+                  "Condition": {
+                    "id": "Condition",
+                    "path": "CdkStack/CloudWatchSyntheticsCanaryStack/CDKMetadata/Condition"
+                  }
+                }
+              }
+            }
+          },
+          "CloudWatchSyntheticsCanaryStack.NestedStack": {
+            "id": "CloudWatchSyntheticsCanaryStack.NestedStack",
+            "path": "CdkStack/CloudWatchSyntheticsCanaryStack.NestedStack",
+            "children": {
+              "CloudWatchSyntheticsCanaryStack.NestedStackResource": {
+                "id": "CloudWatchSyntheticsCanaryStack.NestedStackResource",
+                "path": "CdkStack/CloudWatchSyntheticsCanaryStack.NestedStack/CloudWatchSyntheticsCanaryStack.NestedStackResource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::CloudFormation::Stack",
+                  "aws:cdk:cloudformation:props": {
+                    "templateUrl": {
+                      "Fn::Join": [
+                        "",
+                        [
+                          "https://s3.",
+                          {
+                            "Ref": "AWS::Region"
+                          },
+                          ".",
+                          {
+                            "Ref": "AWS::URLSuffix"
+                          },
+                          "/",
+                          {
+                            "Ref": "AssetParametersfb2c78617135c5311c391068050c1f777fff9ff7aa59163ff4fa06651c9e7b0eS3Bucket9820DF33"
+                          },
+                          "/",
+                          {
+                            "Fn::Select": [
+                              0,
+                              {
+                                "Fn::Split": [
+                                  "||",
+                                  {
+                                    "Ref": "AssetParametersfb2c78617135c5311c391068050c1f777fff9ff7aa59163ff4fa06651c9e7b0eS3VersionKeyDC25B0C6"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "Fn::Select": [
+                              1,
+                              {
+                                "Fn::Split": [
+                                  "||",
+                                  {
+                                    "Ref": "AssetParametersfb2c78617135c5311c391068050c1f777fff9ff7aa59163ff4fa06651c9e7b0eS3VersionKeyDC25B0C6"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "CDKMetadata": {
+            "id": "CDKMetadata",
+            "path": "CdkStack/CDKMetadata",
+            "children": {
+              "Default": {
+                "id": "Default",
+                "path": "CdkStack/CDKMetadata/Default"
+              },
+              "Condition": {
+                "id": "Condition",
+                "path": "CdkStack/CDKMetadata/Condition"
+              }
+            }
+          },
+          "AssetParameters": {
+            "id": "AssetParameters",
+            "path": "CdkStack/AssetParameters",
+            "children": {
+              "ebbb2808432abd80d9081a723ef732354b0d2989fdd098be9c994d3846848cf4": {
+                "id": "ebbb2808432abd80d9081a723ef732354b0d2989fdd098be9c994d3846848cf4",
+                "path": "CdkStack/AssetParameters/ebbb2808432abd80d9081a723ef732354b0d2989fdd098be9c994d3846848cf4",
+                "children": {
+                  "S3Bucket": {
+                    "id": "S3Bucket",
+                    "path": "CdkStack/AssetParameters/ebbb2808432abd80d9081a723ef732354b0d2989fdd098be9c994d3846848cf4/S3Bucket"
+                  },
+                  "S3VersionKey": {
+                    "id": "S3VersionKey",
+                    "path": "CdkStack/AssetParameters/ebbb2808432abd80d9081a723ef732354b0d2989fdd098be9c994d3846848cf4/S3VersionKey"
+                  },
+                  "ArtifactHash": {
+                    "id": "ArtifactHash",
+                    "path": "CdkStack/AssetParameters/ebbb2808432abd80d9081a723ef732354b0d2989fdd098be9c994d3846848cf4/ArtifactHash"
+                  }
+                }
+              },
+              "f4d32dea3ea0eefb97ba48d3b29c23445dad9505d4c6e0462e773e0264a8b809": {
+                "id": "f4d32dea3ea0eefb97ba48d3b29c23445dad9505d4c6e0462e773e0264a8b809",
+                "path": "CdkStack/AssetParameters/f4d32dea3ea0eefb97ba48d3b29c23445dad9505d4c6e0462e773e0264a8b809",
+                "children": {
+                  "S3Bucket": {
+                    "id": "S3Bucket",
+                    "path": "CdkStack/AssetParameters/f4d32dea3ea0eefb97ba48d3b29c23445dad9505d4c6e0462e773e0264a8b809/S3Bucket"
+                  },
+                  "S3VersionKey": {
+                    "id": "S3VersionKey",
+                    "path": "CdkStack/AssetParameters/f4d32dea3ea0eefb97ba48d3b29c23445dad9505d4c6e0462e773e0264a8b809/S3VersionKey"
+                  },
+                  "ArtifactHash": {
+                    "id": "ArtifactHash",
+                    "path": "CdkStack/AssetParameters/f4d32dea3ea0eefb97ba48d3b29c23445dad9505d4c6e0462e773e0264a8b809/ArtifactHash"
+                  }
+                }
+              },
+              "18dd57aa215ca03ef80005d37e5d1b667eb8fd0cb55e1285b1b89a95617ff1a7": {
+                "id": "18dd57aa215ca03ef80005d37e5d1b667eb8fd0cb55e1285b1b89a95617ff1a7",
+                "path": "CdkStack/AssetParameters/18dd57aa215ca03ef80005d37e5d1b667eb8fd0cb55e1285b1b89a95617ff1a7",
+                "children": {
+                  "S3Bucket": {
+                    "id": "S3Bucket",
+                    "path": "CdkStack/AssetParameters/18dd57aa215ca03ef80005d37e5d1b667eb8fd0cb55e1285b1b89a95617ff1a7/S3Bucket"
+                  },
+                  "S3VersionKey": {
+                    "id": "S3VersionKey",
+                    "path": "CdkStack/AssetParameters/18dd57aa215ca03ef80005d37e5d1b667eb8fd0cb55e1285b1b89a95617ff1a7/S3VersionKey"
+                  },
+                  "ArtifactHash": {
+                    "id": "ArtifactHash",
+                    "path": "CdkStack/AssetParameters/18dd57aa215ca03ef80005d37e5d1b667eb8fd0cb55e1285b1b89a95617ff1a7/ArtifactHash"
+                  }
+                }
+              },
+              "bd2e6cc197bd68fac963f37d274a823af2c71af1ae2ea1ec9b484312d0f40b93": {
+                "id": "bd2e6cc197bd68fac963f37d274a823af2c71af1ae2ea1ec9b484312d0f40b93",
+                "path": "CdkStack/AssetParameters/bd2e6cc197bd68fac963f37d274a823af2c71af1ae2ea1ec9b484312d0f40b93",
+                "children": {
+                  "S3Bucket": {
+                    "id": "S3Bucket",
+                    "path": "CdkStack/AssetParameters/bd2e6cc197bd68fac963f37d274a823af2c71af1ae2ea1ec9b484312d0f40b93/S3Bucket"
+                  },
+                  "S3VersionKey": {
+                    "id": "S3VersionKey",
+                    "path": "CdkStack/AssetParameters/bd2e6cc197bd68fac963f37d274a823af2c71af1ae2ea1ec9b484312d0f40b93/S3VersionKey"
+                  },
+                  "ArtifactHash": {
+                    "id": "ArtifactHash",
+                    "path": "CdkStack/AssetParameters/bd2e6cc197bd68fac963f37d274a823af2c71af1ae2ea1ec9b484312d0f40b93/ArtifactHash"
+                  }
+                }
+              },
+              "fb2c78617135c5311c391068050c1f777fff9ff7aa59163ff4fa06651c9e7b0e": {
+                "id": "fb2c78617135c5311c391068050c1f777fff9ff7aa59163ff4fa06651c9e7b0e",
+                "path": "CdkStack/AssetParameters/fb2c78617135c5311c391068050c1f777fff9ff7aa59163ff4fa06651c9e7b0e",
+                "children": {
+                  "S3Bucket": {
+                    "id": "S3Bucket",
+                    "path": "CdkStack/AssetParameters/fb2c78617135c5311c391068050c1f777fff9ff7aa59163ff4fa06651c9e7b0e/S3Bucket"
+                  },
+                  "S3VersionKey": {
+                    "id": "S3VersionKey",
+                    "path": "CdkStack/AssetParameters/fb2c78617135c5311c391068050c1f777fff9ff7aa59163ff4fa06651c9e7b0e/S3VersionKey"
+                  },
+                  "ArtifactHash": {
+                    "id": "ArtifactHash",
+                    "path": "CdkStack/AssetParameters/fb2c78617135c5311c391068050c1f777fff9ff7aa59163ff4fa06651c9e7b0e/ArtifactHash"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

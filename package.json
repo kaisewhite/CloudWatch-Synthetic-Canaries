@@ -32,8 +32,8 @@
     "source-map-support": "^0.5.16"
   },
   "awsProfiles": {
-    "AWSACCOUNTID": "nonprod",
-    "AWSACCOUNTID": "sandbox4"
+    "699678132176": "nonprod",
+    "407747792847": "sandbox4"
    
     
 }

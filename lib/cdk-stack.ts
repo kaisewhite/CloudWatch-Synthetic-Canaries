@@ -4,7 +4,7 @@ import { IAMPolicyStack, IAMRoleStack } from "../modules/iam/index";
 import { s3BucketPolicies, s3Bucket, s3BucketImportGrantAccess } from "../modules/s3/index";
 import { CloudWatchSyntheticsCanaryStack, CloudWatchAlarmsStack } from "../modules/cloudwatch/index";
 
-export class CdkStack extends cdk.Stack {
+export class CloudWatchSyntheticsStack extends cdk.Stack {
   constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
@@ -40,5 +40,5 @@ export class CdkStack extends cdk.Stack {
 }
 
 const app = new cdk.App();
-new CdkStack(app, "CdkStack", { env: { region: env.region } });
+new CloudWatchSyntheticsStack(app, "CloudWatchSyntheticsStack", { env: { region: env.region } });
 app.synth();

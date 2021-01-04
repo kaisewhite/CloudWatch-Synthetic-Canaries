@@ -4,7 +4,7 @@ This is a base template for TypeScript development with CDK.
 
 ## Prerequisites:
 
-install the AWS CDK Toolkit. The toolkit is a command-line utility which allows you to work with CDK apps.
+Install the AWS CDK Toolkit. The toolkit is a command-line utility which allows you to work with CDK apps.
 
 Open a terminal session and run the following command:
 
@@ -38,13 +38,11 @@ Project Structure
 
 ## CloudWatch Synthetic Canaries
 
-The zip files to be deployed are all stored in an S3 bucket in MGMT called [csbs-mgmt-alfresco-cw-syn-canaries](https://s3.console.aws.amazon.com/s3/buckets/csbs-mgmt-alfresco-cw-syn-canaries?region=us-east-1&tab=objects#)
-
-[CodeCommitLibrary](https://console.aws.amazon.com/codesuite/codecommit/repositories/dev-alfresco-cdk-synthethics-canary/browse?region=us-east-1)
+The zip files to be deployed are all stored in an S3 bucket. The Zips are all nodejs scripts which are essentially lambda functions.
 
 Each zip file contains the lambda code to hit a specific endpoint URL. There is no way to update the code through this stack because the class `CfnCanary` will only accept a zip file.
 
-To workaround that there are functions in each script used to help deletermine what environment the canary is in so that it used the right environment variables.
+To workaround that there are functions in each script used to help determine what environment the canary is in so that it used the right environment variables.
 
 In the example below we are calling SSM to retrieve the account number and based on the account number provided, that will deletermine which variable to feed into the strings/URL's
 

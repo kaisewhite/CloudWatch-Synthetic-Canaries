@@ -1,0 +1,35 @@
+{
+  "Resources": {
+    "cwSynResultsS3BucketPolicy": {
+      "Type": "AWS::S3::BucketPolicy",
+      "Properties": {
+        "Bucket": "cw-syn-results-699678132176-us-east-1",
+        "PolicyDocument": {
+          "Version": "2012-10-17",
+          "Statement": [
+            {
+              "Effect": "Allow",
+              "Principal": {
+                "AWS": "arn:aws:iam::699678132176:role/CloudWatchSyntheticsRole"
+              },
+              "Action": "s3:*",
+              "Resource": "arn:aws:s3:::cw-syn-results-699678132176-us-east-1/*"
+            }
+          ]
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "CloudWatchSyntheticsStack/s3BucketPolicies/cwSynResultsS3BucketPolicy"
+      }
+    },
+    "CDKMetadata": {
+      "Type": "AWS::CDK::Metadata",
+      "Properties": {
+        "Modules": "aws-cdk=1.78.0,@aws-cdk/assets=1.77.0,@aws-cdk/aws-cloudwatch=1.77.0,@aws-cdk/aws-events=1.77.0,@aws-cdk/aws-iam=1.77.0,@aws-cdk/aws-kms=1.77.0,@aws-cdk/aws-s3=1.77.0,@aws-cdk/aws-s3-assets=1.77.0,@aws-cdk/aws-synthetics=1.77.0,@aws-cdk/cloud-assembly-schema=1.77.0,@aws-cdk/core=1.77.0,@aws-cdk/cx-api=1.77.0,@aws-cdk/region-info=1.77.0,jsii-runtime=node.js/v12.13.0"
+      },
+      "Metadata": {
+        "aws:cdk:path": "CloudWatchSyntheticsStack/s3BucketPolicies/CDKMetadata/Default"
+      }
+    }
+  }
+}

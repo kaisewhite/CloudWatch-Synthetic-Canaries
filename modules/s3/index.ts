@@ -2,18 +2,22 @@ import * as cdk from "@aws-cdk/core";
 import * as s3 from "@aws-cdk/aws-s3";
 import * as iam from "@aws-cdk/aws-iam";
 import { env } from "../../env";
-import { s3BucketParameters as s3Buckets } from "../../parameters/s3-index";
-import { s3BucketPolicyParameters as s3Policies } from "../../parameters/s3-index";
 
 export class s3Bucket extends cdk.NestedStack {
   constructor(scope: cdk.Construct, id: string, props?: cdk.NestedStackProps) {
     super(scope, id, props);
 
-    s3Buckets.forEach((item) => {
-      const S3Bucket = new s3.CfnBucket(this, `${item.bucketName}-S3Bucket`, {
-        bucketName: item.bucketName,
-        bucketEncryption: item.bucketEncryption,
-      });
+    const cwSynResultsS3Bucket = new s3.CfnBucket(this, `cwSynResultsS3Bucket`, {
+      bucketName: `cw-syn-results-${env.accountID}-${env.region}`,
+      bucketEncryption: {
+        serverSideEncryptionConfiguration: [
+          {
+            serverSideEncryptionByDefault: {
+              sseAlgorithm: "AES256",
+            },
+          },
+        ],
+      },
     });
   }
 }
@@ -25,11 +29,22 @@ export class s3BucketPolicies extends cdk.NestedStack {
     /**
      *
      */
-    s3Policies.forEach((item) => {
-      const S3BucketPolicy = new s3.CfnBucketPolicy(this, `${item.bucket}-S3BucketPolicy`, {
-        bucket: item.bucket,
-        policyDocument: item.policyDocument,
-      });
+
+    const cwSynResultsS3BucketPolicy = new s3.CfnBucketPolicy(this, `cwSynResultsS3BucketPolicy`, {
+      bucket: `cw-syn-results-${env.accountID}-${env.region}`,
+      policyDocument: {
+        Version: "2012-10-17",
+        Statement: [
+          {
+            Effect: "Allow",
+            Principal: {
+              AWS: `arn:aws:iam::${env.accountID}:role/CloudWatchSyntheticsRole`,
+            },
+            Action: "s3:*",
+            Resource: `arn:aws:s3:::cw-syn-results-${env.accountID}-${env.region}/*`,
+          },
+        ],
+      },
     });
   }
 }

@@ -1,0 +1,1275 @@
+{
+  "version": "7.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "CdkStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://699678132176/unknown-region",
+      "properties": {
+        "templateFile": "CdkStack.template.json"
+      },
+      "metadata": {
+        "/CdkStack": [
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "CdkStackIAMPolicyStack56C942A0.nested.template.json",
+              "id": "ebbb2808432abd80d9081a723ef732354b0d2989fdd098be9c994d3846848cf4",
+              "packaging": "file",
+              "sourceHash": "ebbb2808432abd80d9081a723ef732354b0d2989fdd098be9c994d3846848cf4",
+              "s3BucketParameter": "AssetParametersebbb2808432abd80d9081a723ef732354b0d2989fdd098be9c994d3846848cf4S3BucketE82E4673",
+              "s3KeyParameter": "AssetParametersebbb2808432abd80d9081a723ef732354b0d2989fdd098be9c994d3846848cf4S3VersionKey26D6691B",
+              "artifactHashParameter": "AssetParametersebbb2808432abd80d9081a723ef732354b0d2989fdd098be9c994d3846848cf4ArtifactHash7E53A1EC"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/construct-compat.ts:431:92)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:163:23)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "CdkStack.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack.ts:653:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "CdkStack.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack.ts:653:29)",
+              "IAMPolicyStack._prepareTemplateAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/nested-stack.ts:199:48)",
+              "defineNestedStackAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:69:10)",
+              "Object.prepareApp (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:43:7)",
+              "Object.synthesize (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:24:3)",
+              "App.synth (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stage.ts:188:23)",
+              "process.<anonymous> (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
+              "Object.onceWrapper (events.js:300:26)",
+              "process.emit (events.js:215:7)",
+              "process.EventEmitter.emit (domain.js:476:20)",
+              "process.emit (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/source-map-support/source-map-support.js:495:21)",
+              "process.topLevelDomainCallback (domain.js:131:23)"
+            ]
+          },
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "CdkStackIAMRoleStackE536011F.nested.template.json",
+              "id": "f4d32dea3ea0eefb97ba48d3b29c23445dad9505d4c6e0462e773e0264a8b809",
+              "packaging": "file",
+              "sourceHash": "f4d32dea3ea0eefb97ba48d3b29c23445dad9505d4c6e0462e773e0264a8b809",
+              "s3BucketParameter": "AssetParametersf4d32dea3ea0eefb97ba48d3b29c23445dad9505d4c6e0462e773e0264a8b809S3BucketD6CB8391",
+              "s3KeyParameter": "AssetParametersf4d32dea3ea0eefb97ba48d3b29c23445dad9505d4c6e0462e773e0264a8b809S3VersionKey7A4D58FA",
+              "artifactHashParameter": "AssetParametersf4d32dea3ea0eefb97ba48d3b29c23445dad9505d4c6e0462e773e0264a8b809ArtifactHash2F96365A"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/construct-compat.ts:431:92)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:163:23)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "CdkStack.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack.ts:653:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "CdkStack.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack.ts:653:29)",
+              "IAMRoleStack._prepareTemplateAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/nested-stack.ts:199:48)",
+              "defineNestedStackAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:69:10)",
+              "Object.prepareApp (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:43:7)",
+              "Object.synthesize (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:24:3)",
+              "App.synth (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stage.ts:188:23)",
+              "process.<anonymous> (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
+              "Object.onceWrapper (events.js:300:26)",
+              "process.emit (events.js:215:7)",
+              "process.EventEmitter.emit (domain.js:476:20)",
+              "process.emit (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/source-map-support/source-map-support.js:495:21)",
+              "process.topLevelDomainCallback (domain.js:131:23)"
+            ]
+          },
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "CdkStacks3Bucket9541CC22.nested.template.json",
+              "id": "18dd57aa215ca03ef80005d37e5d1b667eb8fd0cb55e1285b1b89a95617ff1a7",
+              "packaging": "file",
+              "sourceHash": "18dd57aa215ca03ef80005d37e5d1b667eb8fd0cb55e1285b1b89a95617ff1a7",
+              "s3BucketParameter": "AssetParameters18dd57aa215ca03ef80005d37e5d1b667eb8fd0cb55e1285b1b89a95617ff1a7S3BucketF57533F5",
+              "s3KeyParameter": "AssetParameters18dd57aa215ca03ef80005d37e5d1b667eb8fd0cb55e1285b1b89a95617ff1a7S3VersionKey6FBA2055",
+              "artifactHashParameter": "AssetParameters18dd57aa215ca03ef80005d37e5d1b667eb8fd0cb55e1285b1b89a95617ff1a7ArtifactHashF1A3F04D"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/construct-compat.ts:431:92)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:163:23)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "CdkStack.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack.ts:653:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "CdkStack.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack.ts:653:29)",
+              "s3Bucket._prepareTemplateAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/nested-stack.ts:199:48)",
+              "defineNestedStackAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:69:10)",
+              "Object.prepareApp (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:43:7)",
+              "Object.synthesize (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:24:3)",
+              "App.synth (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stage.ts:188:23)",
+              "process.<anonymous> (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
+              "Object.onceWrapper (events.js:300:26)",
+              "process.emit (events.js:215:7)",
+              "process.EventEmitter.emit (domain.js:476:20)",
+              "process.emit (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/source-map-support/source-map-support.js:495:21)",
+              "process.topLevelDomainCallback (domain.js:131:23)"
+            ]
+          },
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "CdkStacks3BucketPolicies26154CCF.nested.template.json",
+              "id": "bd2e6cc197bd68fac963f37d274a823af2c71af1ae2ea1ec9b484312d0f40b93",
+              "packaging": "file",
+              "sourceHash": "bd2e6cc197bd68fac963f37d274a823af2c71af1ae2ea1ec9b484312d0f40b93",
+              "s3BucketParameter": "AssetParametersbd2e6cc197bd68fac963f37d274a823af2c71af1ae2ea1ec9b484312d0f40b93S3Bucket483F0E58",
+              "s3KeyParameter": "AssetParametersbd2e6cc197bd68fac963f37d274a823af2c71af1ae2ea1ec9b484312d0f40b93S3VersionKeyFFEAC313",
+              "artifactHashParameter": "AssetParametersbd2e6cc197bd68fac963f37d274a823af2c71af1ae2ea1ec9b484312d0f40b93ArtifactHashB819C95E"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/construct-compat.ts:431:92)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:163:23)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "CdkStack.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack.ts:653:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "CdkStack.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack.ts:653:29)",
+              "s3BucketPolicies._prepareTemplateAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/nested-stack.ts:199:48)",
+              "defineNestedStackAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:69:10)",
+              "Object.prepareApp (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:43:7)",
+              "Object.synthesize (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:24:3)",
+              "App.synth (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stage.ts:188:23)",
+              "process.<anonymous> (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
+              "Object.onceWrapper (events.js:300:26)",
+              "process.emit (events.js:215:7)",
+              "process.EventEmitter.emit (domain.js:476:20)",
+              "process.emit (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/source-map-support/source-map-support.js:495:21)",
+              "process.topLevelDomainCallback (domain.js:131:23)"
+            ]
+          },
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "CdkStackCloudWatchSyntheticsCanaryStackF2F33B2F.nested.template.json",
+              "id": "fb2c78617135c5311c391068050c1f777fff9ff7aa59163ff4fa06651c9e7b0e",
+              "packaging": "file",
+              "sourceHash": "fb2c78617135c5311c391068050c1f777fff9ff7aa59163ff4fa06651c9e7b0e",
+              "s3BucketParameter": "AssetParametersfb2c78617135c5311c391068050c1f777fff9ff7aa59163ff4fa06651c9e7b0eS3Bucket9820DF33",
+              "s3KeyParameter": "AssetParametersfb2c78617135c5311c391068050c1f777fff9ff7aa59163ff4fa06651c9e7b0eS3VersionKeyDC25B0C6",
+              "artifactHashParameter": "AssetParametersfb2c78617135c5311c391068050c1f777fff9ff7aa59163ff4fa06651c9e7b0eArtifactHash3B2D3F53"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/construct-compat.ts:431:92)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:163:23)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "CdkStack.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack.ts:653:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "CdkStack.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack.ts:653:29)",
+              "CloudWatchSyntheticsCanaryStack._prepareTemplateAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/nested-stack.ts:199:48)",
+              "defineNestedStackAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:69:10)",
+              "Object.prepareApp (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:43:7)",
+              "Object.synthesize (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:24:3)",
+              "App.synth (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stage.ts:188:23)",
+              "process.<anonymous> (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
+              "Object.onceWrapper (events.js:300:26)",
+              "process.emit (events.js:215:7)",
+              "process.EventEmitter.emit (domain.js:476:20)",
+              "process.emit (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/source-map-support/source-map-support.js:495:21)",
+              "process.topLevelDomainCallback (domain.js:131:23)"
+            ]
+          }
+        ],
+        "/CdkStack/IAMPolicyStack/AllowSSMIAMManagedPolicy": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AllowSSMIAMManagedPolicy",
+            "trace": [
+              "new IAMPolicyStack (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/modules/iam/index.ts:13:38)",
+              "new CdkStack (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/lib/cdk-stack.ts:20:20)",
+              "Object.<anonymous> (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/bin/cdk.ts:12:1)",
+              "Module._compile (internal/modules/cjs/loader.js:956:30)",
+              "Module.m._compile (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:973:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:812:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)",
+              "main (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:956:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)",
+              "Module.load (internal/modules/cjs/loader.js:812:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkStack/IAMPolicyStack/CloudWatchSyntheticsPolicy": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CloudWatchSyntheticsPolicy",
+            "trace": [
+              "new IAMPolicyStack (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/modules/iam/index.ts:29:40)",
+              "new CdkStack (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/lib/cdk-stack.ts:20:20)",
+              "Object.<anonymous> (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/bin/cdk.ts:12:1)",
+              "Module._compile (internal/modules/cjs/loader.js:956:30)",
+              "Module.m._compile (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:973:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:812:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)",
+              "main (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:956:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)",
+              "Module.load (internal/modules/cjs/loader.js:812:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkStack/IAMPolicyStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:51:24)",
+              "/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:140:5",
+              "visit (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:200:5)",
+              "visit (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:196:5)",
+              "visit (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:196:5)",
+              "injectMetadataResources (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:131:3)",
+              "Object.synthesize (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stage.ts:188:23)",
+              "process.<anonymous> (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
+              "Object.onceWrapper (events.js:300:26)",
+              "process.emit (events.js:215:7)",
+              "process.EventEmitter.emit (domain.js:476:20)",
+              "process.emit (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/source-map-support/source-map-support.js:495:21)",
+              "process.topLevelDomainCallback (domain.js:131:23)"
+            ]
+          }
+        ],
+        "/CdkStack/IAMPolicyStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:60:27)",
+              "/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:140:5",
+              "visit (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:200:5)",
+              "visit (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:196:5)",
+              "visit (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:196:5)",
+              "injectMetadataResources (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:131:3)",
+              "Object.synthesize (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stage.ts:188:23)",
+              "process.<anonymous> (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
+              "Object.onceWrapper (events.js:300:26)",
+              "process.emit (events.js:215:7)",
+              "process.EventEmitter.emit (domain.js:476:20)",
+              "process.emit (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/source-map-support/source-map-support.js:495:21)",
+              "process.topLevelDomainCallback (domain.js:131:23)"
+            ]
+          }
+        ],
+        "/CdkStack/IAMPolicyStack.NestedStack/IAMPolicyStack.NestedStackResource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "IAMPolicyStackNestedStackIAMPolicyStackNestedStackResource4B98A1D2",
+            "trace": [
+              "new NestedStack (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/nested-stack.ts:122:21)",
+              "new IAMPolicyStack (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/modules/iam/index.ts:7:5)",
+              "new CdkStack (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/lib/cdk-stack.ts:20:20)",
+              "Object.<anonymous> (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/bin/cdk.ts:12:1)",
+              "Module._compile (internal/modules/cjs/loader.js:956:30)",
+              "Module.m._compile (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:973:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:812:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)",
+              "main (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:956:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)",
+              "Module.load (internal/modules/cjs/loader.js:812:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkStack/IAMRoleStack/CloudWatchSyntheticsIAMRole": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CloudWatchSyntheticsIAMRole",
+            "trace": [
+              "new IAMRoleStack (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/modules/iam/index.ts:68:41)",
+              "new CdkStack (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/lib/cdk-stack.ts:21:20)",
+              "Object.<anonymous> (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/bin/cdk.ts:12:1)",
+              "Module._compile (internal/modules/cjs/loader.js:956:30)",
+              "Module.m._compile (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:973:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:812:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)",
+              "main (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:956:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)",
+              "Module.load (internal/modules/cjs/loader.js:812:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkStack/IAMRoleStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:51:24)",
+              "/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:140:5",
+              "visit (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:200:5)",
+              "visit (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:196:5)",
+              "visit (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:196:5)",
+              "injectMetadataResources (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:131:3)",
+              "Object.synthesize (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stage.ts:188:23)",
+              "process.<anonymous> (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
+              "Object.onceWrapper (events.js:300:26)",
+              "process.emit (events.js:215:7)",
+              "process.EventEmitter.emit (domain.js:476:20)",
+              "process.emit (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/source-map-support/source-map-support.js:495:21)",
+              "process.topLevelDomainCallback (domain.js:131:23)"
+            ]
+          }
+        ],
+        "/CdkStack/IAMRoleStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:60:27)",
+              "/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:140:5",
+              "visit (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:200:5)",
+              "visit (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:196:5)",
+              "visit (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:196:5)",
+              "injectMetadataResources (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:131:3)",
+              "Object.synthesize (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stage.ts:188:23)",
+              "process.<anonymous> (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
+              "Object.onceWrapper (events.js:300:26)",
+              "process.emit (events.js:215:7)",
+              "process.EventEmitter.emit (domain.js:476:20)",
+              "process.emit (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/source-map-support/source-map-support.js:495:21)",
+              "process.topLevelDomainCallback (domain.js:131:23)"
+            ]
+          }
+        ],
+        "/CdkStack/IAMRoleStack.NestedStack/IAMRoleStack.NestedStackResource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "IAMRoleStackNestedStackIAMRoleStackNestedStackResourceAE3F4E21",
+            "trace": [
+              "new NestedStack (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/nested-stack.ts:122:21)",
+              "new IAMRoleStack (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/modules/iam/index.ts:66:5)",
+              "new CdkStack (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/lib/cdk-stack.ts:21:20)",
+              "Object.<anonymous> (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/bin/cdk.ts:12:1)",
+              "Module._compile (internal/modules/cjs/loader.js:956:30)",
+              "Module.m._compile (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:973:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:812:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)",
+              "main (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:956:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)",
+              "Module.load (internal/modules/cjs/loader.js:812:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkStack/s3Bucket/cwSynResultsS3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "cwSynResultsS3Bucket",
+            "trace": [
+              "new s3Bucket (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/modules/s3/index.ts:10:34)",
+              "new CdkStack (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/lib/cdk-stack.ts:22:20)",
+              "Object.<anonymous> (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/bin/cdk.ts:12:1)",
+              "Module._compile (internal/modules/cjs/loader.js:956:30)",
+              "Module.m._compile (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:973:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:812:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)",
+              "main (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:956:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)",
+              "Module.load (internal/modules/cjs/loader.js:812:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkStack/s3Bucket/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:51:24)",
+              "/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:140:5",
+              "visit (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:200:5)",
+              "visit (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:196:5)",
+              "visit (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:196:5)",
+              "injectMetadataResources (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:131:3)",
+              "Object.synthesize (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stage.ts:188:23)",
+              "process.<anonymous> (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
+              "Object.onceWrapper (events.js:300:26)",
+              "process.emit (events.js:215:7)",
+              "process.EventEmitter.emit (domain.js:476:20)",
+              "process.emit (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/source-map-support/source-map-support.js:495:21)",
+              "process.topLevelDomainCallback (domain.js:131:23)"
+            ]
+          }
+        ],
+        "/CdkStack/s3Bucket/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:60:27)",
+              "/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:140:5",
+              "visit (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:200:5)",
+              "visit (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:196:5)",
+              "visit (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:196:5)",
+              "injectMetadataResources (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:131:3)",
+              "Object.synthesize (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stage.ts:188:23)",
+              "process.<anonymous> (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
+              "Object.onceWrapper (events.js:300:26)",
+              "process.emit (events.js:215:7)",
+              "process.EventEmitter.emit (domain.js:476:20)",
+              "process.emit (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/source-map-support/source-map-support.js:495:21)",
+              "process.topLevelDomainCallback (domain.js:131:23)"
+            ]
+          }
+        ],
+        "/CdkStack/s3Bucket.NestedStack/s3Bucket.NestedStackResource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "s3BucketNestedStacks3BucketNestedStackResource0453A47F",
+            "trace": [
+              "new NestedStack (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/nested-stack.ts:122:21)",
+              "new s3Bucket (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/modules/s3/index.ts:8:5)",
+              "new CdkStack (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/lib/cdk-stack.ts:22:20)",
+              "Object.<anonymous> (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/bin/cdk.ts:12:1)",
+              "Module._compile (internal/modules/cjs/loader.js:956:30)",
+              "Module.m._compile (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:973:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:812:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)",
+              "main (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:956:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)",
+              "Module.load (internal/modules/cjs/loader.js:812:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkStack/s3BucketPolicies/cwSynResultsS3BucketPolicy": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "cwSynResultsS3BucketPolicy",
+            "trace": [
+              "new s3BucketPolicies (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/modules/s3/index.ts:33:40)",
+              "new CdkStack (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/lib/cdk-stack.ts:23:20)",
+              "Object.<anonymous> (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/bin/cdk.ts:12:1)",
+              "Module._compile (internal/modules/cjs/loader.js:956:30)",
+              "Module.m._compile (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:973:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:812:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)",
+              "main (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:956:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)",
+              "Module.load (internal/modules/cjs/loader.js:812:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkStack/s3BucketPolicies/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:51:24)",
+              "/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:140:5",
+              "visit (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:200:5)",
+              "visit (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:196:5)",
+              "visit (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:196:5)",
+              "injectMetadataResources (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:131:3)",
+              "Object.synthesize (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stage.ts:188:23)",
+              "process.<anonymous> (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
+              "Object.onceWrapper (events.js:300:26)",
+              "process.emit (events.js:215:7)",
+              "process.EventEmitter.emit (domain.js:476:20)",
+              "process.emit (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/source-map-support/source-map-support.js:495:21)",
+              "process.topLevelDomainCallback (domain.js:131:23)"
+            ]
+          }
+        ],
+        "/CdkStack/s3BucketPolicies/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:60:27)",
+              "/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:140:5",
+              "visit (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:200:5)",
+              "visit (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:196:5)",
+              "visit (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:196:5)",
+              "injectMetadataResources (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:131:3)",
+              "Object.synthesize (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stage.ts:188:23)",
+              "process.<anonymous> (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
+              "Object.onceWrapper (events.js:300:26)",
+              "process.emit (events.js:215:7)",
+              "process.EventEmitter.emit (domain.js:476:20)",
+              "process.emit (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/source-map-support/source-map-support.js:495:21)",
+              "process.topLevelDomainCallback (domain.js:131:23)"
+            ]
+          }
+        ],
+        "/CdkStack/s3BucketPolicies.NestedStack/s3BucketPolicies.NestedStackResource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "s3BucketPoliciesNestedStacks3BucketPoliciesNestedStackResource7AF0A490",
+            "trace": [
+              "new NestedStack (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/nested-stack.ts:122:21)",
+              "new s3BucketPolicies (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/modules/s3/index.ts:27:5)",
+              "new CdkStack (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/lib/cdk-stack.ts:23:20)",
+              "Object.<anonymous> (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/bin/cdk.ts:12:1)",
+              "Module._compile (internal/modules/cjs/loader.js:956:30)",
+              "Module.m._compile (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:973:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:812:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)",
+              "main (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:956:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)",
+              "Module.load (internal/modules/cjs/loader.js:812:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkStack/CloudWatchSyntheticsCanaryStack/content-service-live-cw-syn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "contentservicelivecwsyn",
+            "trace": [
+              "/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/modules/cloudwatch/index.ts:15:32",
+              "Array.forEach (<anonymous>)",
+              "new CloudWatchSyntheticsCanaryStack (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/modules/cloudwatch/index.ts:14:14)",
+              "new CdkStack (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/lib/cdk-stack.ts:25:20)",
+              "Object.<anonymous> (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/bin/cdk.ts:12:1)",
+              "Module._compile (internal/modules/cjs/loader.js:956:30)",
+              "Module.m._compile (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:973:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:812:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)",
+              "main (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:956:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)",
+              "Module.load (internal/modules/cjs/loader.js:812:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkStack/CloudWatchSyntheticsCanaryStack/content-service-ready-cw-syn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "contentservicereadycwsyn",
+            "trace": [
+              "/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/modules/cloudwatch/index.ts:15:32",
+              "Array.forEach (<anonymous>)",
+              "new CloudWatchSyntheticsCanaryStack (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/modules/cloudwatch/index.ts:14:14)",
+              "new CdkStack (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/lib/cdk-stack.ts:25:20)",
+              "Object.<anonymous> (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/bin/cdk.ts:12:1)",
+              "Module._compile (internal/modules/cjs/loader.js:956:30)",
+              "Module.m._compile (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:973:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:812:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)",
+              "main (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:956:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)",
+              "Module.load (internal/modules/cjs/loader.js:812:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkStack/CloudWatchSyntheticsCanaryStack/content-service-sum-cw-syn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "contentservicesumcwsyn",
+            "trace": [
+              "/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/modules/cloudwatch/index.ts:15:32",
+              "Array.forEach (<anonymous>)",
+              "new CloudWatchSyntheticsCanaryStack (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/modules/cloudwatch/index.ts:14:14)",
+              "new CdkStack (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/lib/cdk-stack.ts:25:20)",
+              "Object.<anonymous> (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/bin/cdk.ts:12:1)",
+              "Module._compile (internal/modules/cjs/loader.js:956:30)",
+              "Module.m._compile (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:973:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:812:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)",
+              "main (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:956:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)",
+              "Module.load (internal/modules/cjs/loader.js:812:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkStack/CloudWatchSyntheticsCanaryStack/download-service-cw-syn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "downloadservicecwsyn",
+            "trace": [
+              "/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/modules/cloudwatch/index.ts:15:32",
+              "Array.forEach (<anonymous>)",
+              "new CloudWatchSyntheticsCanaryStack (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/modules/cloudwatch/index.ts:14:14)",
+              "new CdkStack (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/lib/cdk-stack.ts:25:20)",
+              "Object.<anonymous> (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/bin/cdk.ts:12:1)",
+              "Module._compile (internal/modules/cjs/loader.js:956:30)",
+              "Module.m._compile (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:973:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:812:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)",
+              "main (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:956:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)",
+              "Module.load (internal/modules/cjs/loader.js:812:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkStack/CloudWatchSyntheticsCanaryStack/pdftron-server-cw-syn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "pdftronservercwsyn",
+            "trace": [
+              "/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/modules/cloudwatch/index.ts:15:32",
+              "Array.forEach (<anonymous>)",
+              "new CloudWatchSyntheticsCanaryStack (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/modules/cloudwatch/index.ts:14:14)",
+              "new CdkStack (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/lib/cdk-stack.ts:25:20)",
+              "Object.<anonymous> (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/bin/cdk.ts:12:1)",
+              "Module._compile (internal/modules/cjs/loader.js:956:30)",
+              "Module.m._compile (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:973:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:812:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)",
+              "main (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:956:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)",
+              "Module.load (internal/modules/cjs/loader.js:812:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkStack/CloudWatchSyntheticsCanaryStack/share-service-cw-syn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "shareservicecwsyn",
+            "trace": [
+              "/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/modules/cloudwatch/index.ts:15:32",
+              "Array.forEach (<anonymous>)",
+              "new CloudWatchSyntheticsCanaryStack (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/modules/cloudwatch/index.ts:14:14)",
+              "new CdkStack (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/lib/cdk-stack.ts:25:20)",
+              "Object.<anonymous> (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/bin/cdk.ts:12:1)",
+              "Module._compile (internal/modules/cjs/loader.js:956:30)",
+              "Module.m._compile (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:973:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:812:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)",
+              "main (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:956:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)",
+              "Module.load (internal/modules/cjs/loader.js:812:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkStack/CloudWatchSyntheticsCanaryStack/token-service-cw-syn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "tokenservicecwsyn",
+            "trace": [
+              "/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/modules/cloudwatch/index.ts:15:32",
+              "Array.forEach (<anonymous>)",
+              "new CloudWatchSyntheticsCanaryStack (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/modules/cloudwatch/index.ts:14:14)",
+              "new CdkStack (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/lib/cdk-stack.ts:25:20)",
+              "Object.<anonymous> (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/bin/cdk.ts:12:1)",
+              "Module._compile (internal/modules/cjs/loader.js:956:30)",
+              "Module.m._compile (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:973:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:812:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)",
+              "main (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:956:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)",
+              "Module.load (internal/modules/cjs/loader.js:812:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkStack/CloudWatchSyntheticsCanaryStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:51:24)",
+              "/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:140:5",
+              "visit (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:200:5)",
+              "visit (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:196:5)",
+              "visit (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:196:5)",
+              "injectMetadataResources (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:131:3)",
+              "Object.synthesize (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stage.ts:188:23)",
+              "process.<anonymous> (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
+              "Object.onceWrapper (events.js:300:26)",
+              "process.emit (events.js:215:7)",
+              "process.EventEmitter.emit (domain.js:476:20)",
+              "process.emit (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/source-map-support/source-map-support.js:495:21)",
+              "process.topLevelDomainCallback (domain.js:131:23)"
+            ]
+          }
+        ],
+        "/CdkStack/CloudWatchSyntheticsCanaryStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:60:27)",
+              "/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:140:5",
+              "visit (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:200:5)",
+              "visit (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:196:5)",
+              "visit (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:196:5)",
+              "injectMetadataResources (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:131:3)",
+              "Object.synthesize (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stage.ts:188:23)",
+              "process.<anonymous> (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
+              "Object.onceWrapper (events.js:300:26)",
+              "process.emit (events.js:215:7)",
+              "process.EventEmitter.emit (domain.js:476:20)",
+              "process.emit (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/source-map-support/source-map-support.js:495:21)",
+              "process.topLevelDomainCallback (domain.js:131:23)"
+            ]
+          }
+        ],
+        "/CdkStack/CloudWatchSyntheticsCanaryStack.NestedStack/CloudWatchSyntheticsCanaryStack.NestedStackResource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CloudWatchSyntheticsCanaryStackNestedStackCloudWatchSyntheticsCanaryStackNestedStackResourceADEFEB78",
+            "trace": [
+              "new NestedStack (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/nested-stack.ts:122:21)",
+              "new CloudWatchSyntheticsCanaryStack (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/modules/cloudwatch/index.ts:9:5)",
+              "new CdkStack (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/lib/cdk-stack.ts:25:20)",
+              "Object.<anonymous> (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/bin/cdk.ts:12:1)",
+              "Module._compile (internal/modules/cjs/loader.js:956:30)",
+              "Module.m._compile (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:973:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:812:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)",
+              "main (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:956:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)",
+              "Module.load (internal/modules/cjs/loader.js:812:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:724:14)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:51:24)",
+              "/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:140:5",
+              "visit (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:200:5)",
+              "visit (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:196:5)",
+              "injectMetadataResources (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:131:3)",
+              "Object.synthesize (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stage.ts:188:23)",
+              "process.<anonymous> (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
+              "Object.onceWrapper (events.js:300:26)",
+              "process.emit (events.js:215:7)",
+              "process.EventEmitter.emit (domain.js:476:20)",
+              "process.emit (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/source-map-support/source-map-support.js:495:21)",
+              "process.topLevelDomainCallback (domain.js:131:23)"
+            ]
+          }
+        ],
+        "/CdkStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:60:27)",
+              "/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:140:5",
+              "visit (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:200:5)",
+              "visit (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:196:5)",
+              "injectMetadataResources (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:131:3)",
+              "Object.synthesize (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stage.ts:188:23)",
+              "process.<anonymous> (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
+              "Object.onceWrapper (events.js:300:26)",
+              "process.emit (events.js:215:7)",
+              "process.EventEmitter.emit (domain.js:476:20)",
+              "process.emit (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/source-map-support/source-map-support.js:495:21)",
+              "process.topLevelDomainCallback (domain.js:131:23)"
+            ]
+          }
+        ],
+        "/CdkStack/AssetParameters/ebbb2808432abd80d9081a723ef732354b0d2989fdd098be9c994d3846848cf4/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersebbb2808432abd80d9081a723ef732354b0d2989fdd098be9c994d3846848cf4S3BucketE82E4673",
+            "trace": [
+              "new FileAssetParameters (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:16:32)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:150:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "CdkStack.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack.ts:653:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "CdkStack.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack.ts:653:29)",
+              "IAMPolicyStack._prepareTemplateAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/nested-stack.ts:199:48)",
+              "defineNestedStackAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:69:10)",
+              "Object.prepareApp (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:43:7)",
+              "Object.synthesize (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:24:3)",
+              "App.synth (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stage.ts:188:23)",
+              "process.<anonymous> (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
+              "Object.onceWrapper (events.js:300:26)",
+              "process.emit (events.js:215:7)",
+              "process.EventEmitter.emit (domain.js:476:20)",
+              "process.emit (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/source-map-support/source-map-support.js:495:21)",
+              "process.topLevelDomainCallback (domain.js:131:23)"
+            ]
+          }
+        ],
+        "/CdkStack/AssetParameters/ebbb2808432abd80d9081a723ef732354b0d2989fdd098be9c994d3846848cf4/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersebbb2808432abd80d9081a723ef732354b0d2989fdd098be9c994d3846848cf4S3VersionKey26D6691B",
+            "trace": [
+              "new FileAssetParameters (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:21:31)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:150:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "CdkStack.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack.ts:653:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "CdkStack.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack.ts:653:29)",
+              "IAMPolicyStack._prepareTemplateAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/nested-stack.ts:199:48)",
+              "defineNestedStackAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:69:10)",
+              "Object.prepareApp (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:43:7)",
+              "Object.synthesize (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:24:3)",
+              "App.synth (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stage.ts:188:23)",
+              "process.<anonymous> (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
+              "Object.onceWrapper (events.js:300:26)",
+              "process.emit (events.js:215:7)",
+              "process.EventEmitter.emit (domain.js:476:20)",
+              "process.emit (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/source-map-support/source-map-support.js:495:21)",
+              "process.topLevelDomainCallback (domain.js:131:23)"
+            ]
+          }
+        ],
+        "/CdkStack/AssetParameters/ebbb2808432abd80d9081a723ef732354b0d2989fdd098be9c994d3846848cf4/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersebbb2808432abd80d9081a723ef732354b0d2989fdd098be9c994d3846848cf4ArtifactHash7E53A1EC",
+            "trace": [
+              "new FileAssetParameters (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:26:34)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:150:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "CdkStack.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack.ts:653:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "CdkStack.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack.ts:653:29)",
+              "IAMPolicyStack._prepareTemplateAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/nested-stack.ts:199:48)",
+              "defineNestedStackAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:69:10)",
+              "Object.prepareApp (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:43:7)",
+              "Object.synthesize (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:24:3)",
+              "App.synth (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stage.ts:188:23)",
+              "process.<anonymous> (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
+              "Object.onceWrapper (events.js:300:26)",
+              "process.emit (events.js:215:7)",
+              "process.EventEmitter.emit (domain.js:476:20)",
+              "process.emit (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/source-map-support/source-map-support.js:495:21)",
+              "process.topLevelDomainCallback (domain.js:131:23)"
+            ]
+          }
+        ],
+        "/CdkStack/AssetParameters/f4d32dea3ea0eefb97ba48d3b29c23445dad9505d4c6e0462e773e0264a8b809/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersf4d32dea3ea0eefb97ba48d3b29c23445dad9505d4c6e0462e773e0264a8b809S3BucketD6CB8391",
+            "trace": [
+              "new FileAssetParameters (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:16:32)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:150:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "CdkStack.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack.ts:653:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "CdkStack.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack.ts:653:29)",
+              "IAMRoleStack._prepareTemplateAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/nested-stack.ts:199:48)",
+              "defineNestedStackAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:69:10)",
+              "Object.prepareApp (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:43:7)",
+              "Object.synthesize (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:24:3)",
+              "App.synth (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stage.ts:188:23)",
+              "process.<anonymous> (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
+              "Object.onceWrapper (events.js:300:26)",
+              "process.emit (events.js:215:7)",
+              "process.EventEmitter.emit (domain.js:476:20)",
+              "process.emit (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/source-map-support/source-map-support.js:495:21)",
+              "process.topLevelDomainCallback (domain.js:131:23)"
+            ]
+          }
+        ],
+        "/CdkStack/AssetParameters/f4d32dea3ea0eefb97ba48d3b29c23445dad9505d4c6e0462e773e0264a8b809/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersf4d32dea3ea0eefb97ba48d3b29c23445dad9505d4c6e0462e773e0264a8b809S3VersionKey7A4D58FA",
+            "trace": [
+              "new FileAssetParameters (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:21:31)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:150:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "CdkStack.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack.ts:653:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "CdkStack.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack.ts:653:29)",
+              "IAMRoleStack._prepareTemplateAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/nested-stack.ts:199:48)",
+              "defineNestedStackAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:69:10)",
+              "Object.prepareApp (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:43:7)",
+              "Object.synthesize (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:24:3)",
+              "App.synth (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stage.ts:188:23)",
+              "process.<anonymous> (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
+              "Object.onceWrapper (events.js:300:26)",
+              "process.emit (events.js:215:7)",
+              "process.EventEmitter.emit (domain.js:476:20)",
+              "process.emit (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/source-map-support/source-map-support.js:495:21)",
+              "process.topLevelDomainCallback (domain.js:131:23)"
+            ]
+          }
+        ],
+        "/CdkStack/AssetParameters/f4d32dea3ea0eefb97ba48d3b29c23445dad9505d4c6e0462e773e0264a8b809/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersf4d32dea3ea0eefb97ba48d3b29c23445dad9505d4c6e0462e773e0264a8b809ArtifactHash2F96365A",
+            "trace": [
+              "new FileAssetParameters (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:26:34)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:150:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "CdkStack.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack.ts:653:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "CdkStack.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack.ts:653:29)",
+              "IAMRoleStack._prepareTemplateAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/nested-stack.ts:199:48)",
+              "defineNestedStackAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:69:10)",
+              "Object.prepareApp (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:43:7)",
+              "Object.synthesize (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:24:3)",
+              "App.synth (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stage.ts:188:23)",
+              "process.<anonymous> (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
+              "Object.onceWrapper (events.js:300:26)",
+              "process.emit (events.js:215:7)",
+              "process.EventEmitter.emit (domain.js:476:20)",
+              "process.emit (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/source-map-support/source-map-support.js:495:21)",
+              "process.topLevelDomainCallback (domain.js:131:23)"
+            ]
+          }
+        ],
+        "/CdkStack/AssetParameters/18dd57aa215ca03ef80005d37e5d1b667eb8fd0cb55e1285b1b89a95617ff1a7/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters18dd57aa215ca03ef80005d37e5d1b667eb8fd0cb55e1285b1b89a95617ff1a7S3BucketF57533F5",
+            "trace": [
+              "new FileAssetParameters (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:16:32)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:150:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "CdkStack.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack.ts:653:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "CdkStack.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack.ts:653:29)",
+              "s3Bucket._prepareTemplateAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/nested-stack.ts:199:48)",
+              "defineNestedStackAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:69:10)",
+              "Object.prepareApp (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:43:7)",
+              "Object.synthesize (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:24:3)",
+              "App.synth (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stage.ts:188:23)",
+              "process.<anonymous> (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
+              "Object.onceWrapper (events.js:300:26)",
+              "process.emit (events.js:215:7)",
+              "process.EventEmitter.emit (domain.js:476:20)",
+              "process.emit (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/source-map-support/source-map-support.js:495:21)",
+              "process.topLevelDomainCallback (domain.js:131:23)"
+            ]
+          }
+        ],
+        "/CdkStack/AssetParameters/18dd57aa215ca03ef80005d37e5d1b667eb8fd0cb55e1285b1b89a95617ff1a7/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters18dd57aa215ca03ef80005d37e5d1b667eb8fd0cb55e1285b1b89a95617ff1a7S3VersionKey6FBA2055",
+            "trace": [
+              "new FileAssetParameters (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:21:31)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:150:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "CdkStack.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack.ts:653:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "CdkStack.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack.ts:653:29)",
+              "s3Bucket._prepareTemplateAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/nested-stack.ts:199:48)",
+              "defineNestedStackAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:69:10)",
+              "Object.prepareApp (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:43:7)",
+              "Object.synthesize (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:24:3)",
+              "App.synth (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stage.ts:188:23)",
+              "process.<anonymous> (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
+              "Object.onceWrapper (events.js:300:26)",
+              "process.emit (events.js:215:7)",
+              "process.EventEmitter.emit (domain.js:476:20)",
+              "process.emit (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/source-map-support/source-map-support.js:495:21)",
+              "process.topLevelDomainCallback (domain.js:131:23)"
+            ]
+          }
+        ],
+        "/CdkStack/AssetParameters/18dd57aa215ca03ef80005d37e5d1b667eb8fd0cb55e1285b1b89a95617ff1a7/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters18dd57aa215ca03ef80005d37e5d1b667eb8fd0cb55e1285b1b89a95617ff1a7ArtifactHashF1A3F04D",
+            "trace": [
+              "new FileAssetParameters (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:26:34)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:150:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "CdkStack.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack.ts:653:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "CdkStack.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack.ts:653:29)",
+              "s3Bucket._prepareTemplateAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/nested-stack.ts:199:48)",
+              "defineNestedStackAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:69:10)",
+              "Object.prepareApp (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:43:7)",
+              "Object.synthesize (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:24:3)",
+              "App.synth (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stage.ts:188:23)",
+              "process.<anonymous> (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
+              "Object.onceWrapper (events.js:300:26)",
+              "process.emit (events.js:215:7)",
+              "process.EventEmitter.emit (domain.js:476:20)",
+              "process.emit (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/source-map-support/source-map-support.js:495:21)",
+              "process.topLevelDomainCallback (domain.js:131:23)"
+            ]
+          }
+        ],
+        "/CdkStack/AssetParameters/bd2e6cc197bd68fac963f37d274a823af2c71af1ae2ea1ec9b484312d0f40b93/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersbd2e6cc197bd68fac963f37d274a823af2c71af1ae2ea1ec9b484312d0f40b93S3Bucket483F0E58",
+            "trace": [
+              "new FileAssetParameters (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:16:32)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:150:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "CdkStack.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack.ts:653:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "CdkStack.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack.ts:653:29)",
+              "s3BucketPolicies._prepareTemplateAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/nested-stack.ts:199:48)",
+              "defineNestedStackAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:69:10)",
+              "Object.prepareApp (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:43:7)",
+              "Object.synthesize (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:24:3)",
+              "App.synth (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stage.ts:188:23)",
+              "process.<anonymous> (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
+              "Object.onceWrapper (events.js:300:26)",
+              "process.emit (events.js:215:7)",
+              "process.EventEmitter.emit (domain.js:476:20)",
+              "process.emit (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/source-map-support/source-map-support.js:495:21)",
+              "process.topLevelDomainCallback (domain.js:131:23)"
+            ]
+          }
+        ],
+        "/CdkStack/AssetParameters/bd2e6cc197bd68fac963f37d274a823af2c71af1ae2ea1ec9b484312d0f40b93/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersbd2e6cc197bd68fac963f37d274a823af2c71af1ae2ea1ec9b484312d0f40b93S3VersionKeyFFEAC313",
+            "trace": [
+              "new FileAssetParameters (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:21:31)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:150:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "CdkStack.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack.ts:653:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "CdkStack.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack.ts:653:29)",
+              "s3BucketPolicies._prepareTemplateAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/nested-stack.ts:199:48)",
+              "defineNestedStackAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:69:10)",
+              "Object.prepareApp (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:43:7)",
+              "Object.synthesize (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:24:3)",
+              "App.synth (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stage.ts:188:23)",
+              "process.<anonymous> (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
+              "Object.onceWrapper (events.js:300:26)",
+              "process.emit (events.js:215:7)",
+              "process.EventEmitter.emit (domain.js:476:20)",
+              "process.emit (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/source-map-support/source-map-support.js:495:21)",
+              "process.topLevelDomainCallback (domain.js:131:23)"
+            ]
+          }
+        ],
+        "/CdkStack/AssetParameters/bd2e6cc197bd68fac963f37d274a823af2c71af1ae2ea1ec9b484312d0f40b93/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersbd2e6cc197bd68fac963f37d274a823af2c71af1ae2ea1ec9b484312d0f40b93ArtifactHashB819C95E",
+            "trace": [
+              "new FileAssetParameters (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:26:34)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:150:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "CdkStack.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack.ts:653:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "CdkStack.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack.ts:653:29)",
+              "s3BucketPolicies._prepareTemplateAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/nested-stack.ts:199:48)",
+              "defineNestedStackAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:69:10)",
+              "Object.prepareApp (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:43:7)",
+              "Object.synthesize (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:24:3)",
+              "App.synth (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stage.ts:188:23)",
+              "process.<anonymous> (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
+              "Object.onceWrapper (events.js:300:26)",
+              "process.emit (events.js:215:7)",
+              "process.EventEmitter.emit (domain.js:476:20)",
+              "process.emit (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/source-map-support/source-map-support.js:495:21)",
+              "process.topLevelDomainCallback (domain.js:131:23)"
+            ]
+          }
+        ],
+        "/CdkStack/AssetParameters/fb2c78617135c5311c391068050c1f777fff9ff7aa59163ff4fa06651c9e7b0e/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersfb2c78617135c5311c391068050c1f777fff9ff7aa59163ff4fa06651c9e7b0eS3Bucket9820DF33",
+            "trace": [
+              "new FileAssetParameters (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:16:32)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:150:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "CdkStack.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack.ts:653:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "CdkStack.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack.ts:653:29)",
+              "CloudWatchSyntheticsCanaryStack._prepareTemplateAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/nested-stack.ts:199:48)",
+              "defineNestedStackAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:69:10)",
+              "Object.prepareApp (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:43:7)",
+              "Object.synthesize (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:24:3)",
+              "App.synth (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stage.ts:188:23)",
+              "process.<anonymous> (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
+              "Object.onceWrapper (events.js:300:26)",
+              "process.emit (events.js:215:7)",
+              "process.EventEmitter.emit (domain.js:476:20)",
+              "process.emit (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/source-map-support/source-map-support.js:495:21)",
+              "process.topLevelDomainCallback (domain.js:131:23)"
+            ]
+          }
+        ],
+        "/CdkStack/AssetParameters/fb2c78617135c5311c391068050c1f777fff9ff7aa59163ff4fa06651c9e7b0e/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersfb2c78617135c5311c391068050c1f777fff9ff7aa59163ff4fa06651c9e7b0eS3VersionKeyDC25B0C6",
+            "trace": [
+              "new FileAssetParameters (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:21:31)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:150:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "CdkStack.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack.ts:653:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "CdkStack.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack.ts:653:29)",
+              "CloudWatchSyntheticsCanaryStack._prepareTemplateAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/nested-stack.ts:199:48)",
+              "defineNestedStackAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:69:10)",
+              "Object.prepareApp (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:43:7)",
+              "Object.synthesize (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:24:3)",
+              "App.synth (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stage.ts:188:23)",
+              "process.<anonymous> (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
+              "Object.onceWrapper (events.js:300:26)",
+              "process.emit (events.js:215:7)",
+              "process.EventEmitter.emit (domain.js:476:20)",
+              "process.emit (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/source-map-support/source-map-support.js:495:21)",
+              "process.topLevelDomainCallback (domain.js:131:23)"
+            ]
+          }
+        ],
+        "/CdkStack/AssetParameters/fb2c78617135c5311c391068050c1f777fff9ff7aa59163ff4fa06651c9e7b0e/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersfb2c78617135c5311c391068050c1f777fff9ff7aa59163ff4fa06651c9e7b0eArtifactHash3B2D3F53",
+            "trace": [
+              "new FileAssetParameters (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:26:34)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:150:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "CdkStack.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack.ts:653:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "CdkStack.addFileAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stack.ts:653:29)",
+              "CloudWatchSyntheticsCanaryStack._prepareTemplateAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/nested-stack.ts:199:48)",
+              "defineNestedStackAsset (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:69:10)",
+              "Object.prepareApp (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/prepare-app.ts:43:7)",
+              "Object.synthesize (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/private/synthesis.ts:24:3)",
+              "App.synth (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/stage.ts:188:23)",
+              "process.<anonymous> (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
+              "Object.onceWrapper (events.js:300:26)",
+              "process.emit (events.js:215:7)",
+              "process.EventEmitter.emit (domain.js:476:20)",
+              "process.emit (/Users/kaisewhite/Google Drive/Employment/Pleiotek/CSBS/CodeCommit/dev-alfresco-cdk-synthethics-canary/node_modules/source-map-support/source-map-support.js:495:21)",
+              "process.topLevelDomainCallback (domain.js:131:23)"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
