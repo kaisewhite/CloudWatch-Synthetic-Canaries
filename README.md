@@ -35,6 +35,7 @@ Project Structure
 | `env.ts`                        | Stores global variables to be called throughout the project                                 |
 | `buildspec.yaml`                | This file is needed if we want to run this project inside of Pipeline using AWS Codebuild   |
 | `cdk.json`                      | Tells the CDK Toolkit how to execute your app and defines any additional plugins to be used |
+| `SampleCanary`                  | Sample Canary Script                                                                        |
 
 ## CloudWatch Synthetic Canaries
 
