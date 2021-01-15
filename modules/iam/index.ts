@@ -10,6 +10,22 @@ export class IAMPolicyStack extends cdk.NestedStack {
      *
      */
 
+    const IAMManagedPolicy = new iam.CfnManagedPolicy(this, "IAMManagedPolicy", {
+      managedPolicyName: "STSGetCallerIdentity",
+      path: "/",
+      policyDocument: {
+        Version: "2012-10-17",
+        Statement: [
+          {
+            Sid: "VisualEditor0",
+            Effect: "Allow",
+            Action: "sts:GetCallerIdentity",
+            Resource: "*",
+          },
+        ],
+      },
+    });
+
     const AllowSSMIAMManagedPolicy = new iam.CfnManagedPolicy(this, `AllowSSMIAMManagedPolicy`, {
       managedPolicyName: "AllowSSM",
       path: "/",
@@ -73,7 +89,11 @@ export class IAMRoleStack extends cdk.NestedStack {
         Statement: [{ Effect: "Allow", Principal: { Service: "lambda.amazonaws.com" }, Action: "sts:AssumeRole" }],
       },
       maxSessionDuration: 3600,
-      managedPolicyArns: [`arn:aws:iam::${env.accountID}:policy/AllowSSM`, `arn:aws:iam::${env.accountID}:policy/CloudWatchSyntheticsPolicy`],
+      managedPolicyArns: [
+        `arn:aws:iam::${env.accountID}:policy/AllowSSM`,
+        `arn:aws:iam::${env.accountID}:policy/CloudWatchSyntheticsPolicy`,
+        `arn:aws:iam::${env.accountID}:policy/STSGetCallerIdentity`,
+      ],
       description: "Allows Lambda functions to call AWS services on your behalf.",
     });
   }

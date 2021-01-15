@@ -22,11 +22,14 @@
     "cdk-multi-profile-plugin": "^0.0.1"
   },
   "dependencies": {
+    "@aws-cdk/aws-cloudformation": "^1.83.0",
     "@aws-cdk/aws-cloudwatch": "^1.77.0",
     "@aws-cdk/aws-codecommit": "^1.77.0",
     "@aws-cdk/aws-ec2": "^1.77.0",
+    "@aws-cdk/aws-lambda": "^1.83.0",
     "@aws-cdk/aws-synthetics": "^1.77.0",
     "@aws-cdk/core": "^1.77.0",
+    "@mobileposse/auto-delete-bucket": "^1.55.0",
     "aws-sdk": "^2.806.0",
     "cdk-multi-profile-plugin": "^1.2.1",
     "source-map-support": "^0.5.16"
@@ -34,7 +37,5 @@
   "awsProfiles": {
     "699678132176": "nonprod",
     "407747792847": "sandbox4"
-   
-    
-}
+  }
 }

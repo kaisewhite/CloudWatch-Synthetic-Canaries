@@ -2,11 +2,13 @@ import * as cdk from "@aws-cdk/core";
 import * as s3 from "@aws-cdk/aws-s3";
 import * as iam from "@aws-cdk/aws-iam";
 import { env } from "../../env";
+import { AutoDeleteBucket } from "@mobileposse/auto-delete-bucket";
 
 export class s3Bucket extends cdk.NestedStack {
   constructor(scope: cdk.Construct, id: string, props?: cdk.NestedStackProps) {
     super(scope, id, props);
 
+    const bucket = new AutoDeleteBucket(this, `cw-syn-results-${env.accountID}-${env.region}`);
     const cwSynResultsS3Bucket = new s3.CfnBucket(this, `cwSynResultsS3Bucket`, {
       bucketName: `cw-syn-results-${env.accountID}-${env.region}`,
       bucketEncryption: {

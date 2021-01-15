@@ -4,12 +4,23 @@
  * or primitive values from the module so they can be used by other programs with the import statement
  */
 
-let nonprod = { accountID: "699678132176", environment: "nonprod" };
-let sandbox4 = { accountID: "407747792847", environment: "sandbox4" };
-
 export let env = {
-  environment: "nonprod",
+  environment: "sandbox4",
   region: "us-east-1",
-  application: "applicationName",
-  accountID: nonprod.accountID,
+  accountID: "574*******",
+  description: "CloudWatch Synthetic Canaries for adventureworks Endpoints",
 };
+
+export let vpcConfigNonProd = {
+  vpcId: "", //This will only accept a string
+  subnetIds: ["", ""], //This will accept a string or an array of strings
+  securityGroupIds: [""], //This will accept a string or an array of strings
+};
+
+export let vpcConfigSandbox4 = {
+  vpcId: "", //This will only accept a string
+  subnetIds: ["", ""], //This will accept a string or an array of strings
+  securityGroupIds: [""], //This will accept a string or an array of strings
+};
+
+export let vpcConfig = vpcConfigSandbox4; //Had to statically set this because for some reason conditional statements won't set the value

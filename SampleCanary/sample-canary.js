@@ -55,10 +55,10 @@ const apiCanaryBlueprint = async function () {
   method = "GET";
   service = "ses";
   //env = "dev";
-  path = "/alfresco/api/-default-/public/alfresco/versions/1/probes/-ready-";
+  path = "/adventureworks/api/-default-/public/adventureworks/versions/1/probes/-ready-";
 
   await verifyRequest({
-    hostname: `alfresco-${service}-${env}-internal.srrcsbs.org`,
+    hostname: `adventureworks-${service}-${env}-internal.srrcsbs.org`,
     method: method,
     path: path,
     port: port,
