@@ -1,4 +1,4 @@
-# CloudWatch Synthetic Canary Project for Alfresco Endpoints
+# CloudWatch Synthetic Canaries
 
 ### References
 
